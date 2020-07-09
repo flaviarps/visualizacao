@@ -1123,47 +1123,8 @@
 		{"name":"Pessoa",				"id": "6","type":"class"},
 		{"name":"Avaliacao",			"id": "7","type":"class"},
 		{"name":"AvaliacaoDiscursiva",	"id": "8","type":"class"},
-		{"name":"AvaliacaoObjetiva",	"id": "9","type":"class"},
+		{"name":"AvaliacaoObjetiva",	"id": "9","type":"class"}
 		
-		{"name":"Escola_X",				"id": "10","type":"NamedIndividual"},		
-		{"name":"razaoSocial",			"id": "11","type":"DataProperty"},
-		{"name":"cnpj",					"id": "12","type":"DataProperty"},			
-		
-		{"name":"Educacao_Infantil",	"id": "13","type":"NamedIndividual"},
-		{"name":"Ensino_Fundamental",	"id": "14","type":"NamedIndividual"},
-		{"name":"Ensino_Medio",			"id": "15","type":"NamedIndividual"},		
-		{"name":"nomeSegmento",			"id": "16","type":"DataProperty"},
-		
-		{"name":"Biologia_Medio",		"id": "17","type":"NamedIndividual"},
-		{"name":"Matematica_Medio",		"id": "18","type":"NamedIndividual"},
-		{"name":"Matematica_Fund",		"id": "19","type":"NamedIndividual"},		
-		{"name":"nomeDisciplina",		"id": "20","type":"DataProperty"},	
-		{"name":"ementa",				"id": "21","type":"DataProperty"},		
-		
-		{"name":"Turma_A",				"id": "22","type":"NamedIndividual"},
-		{"name":"Turma_B",				"id": "23","type":"NamedIndividual"},
-		{"name":"nomeTurma",			"id": "24","type":"DataProperty"},		
-		{"name":"ano",					"id": "25","type":"DataProperty"},
-		
-		{"name":"Professor_A",			"id": "26","type":"NamedIndividual"},
-		{"name":"Professor_B",			"id": "27","type":"NamedIndividual"},
-		{"name":"titulacao",			"id": "28","type":"DataProperty"},
-		
-		{"name":"Aluno_A1",				"id": "29","type":"NamedIndividual"},
-		{"name":"Aluno_B1",				"id": "30","type":"NamedIndividual"},
-		{"name":"Aluno_A2",				"id": "31","type":"NamedIndividual"},
-		{"name":"Aluno_B2",				"id": "32","type":"NamedIndividual"},
-		{"name":"matricula",			"id": "33","type":"DataProperty"},
-		
-		{"name":"nome",					"id": "34","type":"DataProperty"},
-		{"name":"endereco",				"id": "35","type":"DataProperty"},
-		
-		{"name":"avaliacao",			"id": "36","type":"DataProperty"},
-		
-		{"name":"Prova_Objetiva_A1",	"id": "37","type":"NamedIndividual"},
-		{"name":"Prova_Objetiva_A2",	"id": "38","type":"NamedIndividual"},
-		{"name":"Prova_Discursiva_A1",	"id": "39","type":"NamedIndividual"},
-		{"name":"Prova_Discursiva_A2",	"id": "40","type":"NamedIndividual"}
 	],
 	"edges":[
 		{"source":0,"target":1,"Property":"EstruturadaEm"},
@@ -1178,46 +1139,6 @@
 		{"source":8,"target":7,"Property":"SubClassOf"},
 		{"source":9,"target":7,"Property":"SubClassOf"},
 		{"source":7,"target":5,"Property":"FazAvaliacao"},
-		{"source":5,"target":7,"Property":"TemAluno"},
-		
-		{"source":0,"target":10,"Property":"NamedIndividual"},
-		{"source":0,"target":11,"Property":"DataPropertyAssetion"},
-		{"source":0,"target":12,"Property":"DataPropertyAssetion"},			
-		
-		{"source":1,"target":13,"Property":"NamedIndividual"},
-		{"source":1,"target":14,"Property":"NamedIndividual"},
-		{"source":1,"target":15,"Property":"NamedIndividual"},		
-		{"source":1,"target":16,"Property":"DataPropertyAssetion"},
-				
-		{"source":2,"target":17,"Property":"NamedIndividual"},
-		{"source":2,"target":18,"Property":"NamedIndividual"},
-		{"source":2,"target":19,"Property":"NamedIndividual"},		
-		{"source":2,"target":20,"Property":"DataPropertyAssetion"},
-		{"source":2,"target":21,"Property":"DataPropertyAssetion"},		
-		
-		{"source":3,"target":22,"Property":"NamedIndividual"},
-		{"source":3,"target":23,"Property":"NamedIndividual"},
-		{"source":3,"target":24,"Property":"DataPropertyAssetion"},		
-		{"source":3,"target":25,"Property":"DataPropertyAssetion"},
-		
-		{"source":4,"target":26,"Property":"NamedIndividual"},		
-		{"source":4,"target":27,"Property":"NamedIndividual"},
-		{"source":4,"target":28,"Property":"DataPropertyAssetion"},
-		
-		{"source":5,"target":29,"Property":"NamedIndividual"},		
-		{"source":5,"target":30,"Property":"NamedIndividual"},
-		{"source":5,"target":31,"Property":"NamedIndividual"},
-		{"source":5,"target":32,"Property":"NamedIndividual"},
-		{"source":5,"target":33,"Property":"DataPropertyAssetion"},
-		
-		{"source":6,"target":34,"Property":"DataPropertyAssetion"},
-		{"source":6,"target":35,"Property":"DataPropertyAssetion"},
-		
-		{"source":7,"target":36,"Property":"DataPropertyAssetion"},
-		
-		{"source":9,"target":37,"Property":"NamedIndividual"},
-		{"source":9,"target":38,"Property":"NamedIndividual"},		
-		{"source":8,"target":39,"Property":"NamedIndividual"},
-		{"source":8,"target":40,"Property":"NamedIndividual"}
+		{"source":5,"target":7,"Property":"TemAluno"}
 	]
 }
