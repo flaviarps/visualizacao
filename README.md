@@ -23,12 +23,12 @@
 
 ## Projeto Final (Ontology:Protégé)
 
-Rede (Classe, Atributo e Indivíduos): https://flaviarps.github.io/visualizacao/projetoFinal/
+###### Rede (Classe, Atributo e Indivíduos): https://flaviarps.github.io/visualizacao/projetoFinal/
 
-Rede (Classe): https://flaviarps.github.io/visualizacao/projetoFinal/redeClass/
+###### Rede (Classe): https://flaviarps.github.io/visualizacao/projetoFinal/redeClass/
 
-SVG Web Owl: https://flaviarps.github.io/visualizacao/projetoFinal/projeto.webVOWL.svg
+###### SVG Web Owl: https://flaviarps.github.io/visualizacao/projetoFinal/projeto.webVOWL.svg
 
-Diagrama OWL viz:  https://flaviarps.github.io/visualizacao/projetoFinal/DiagramaOWLViz.png
+###### Diagrama OWL viz:  https://flaviarps.github.io/visualizacao/projetoFinal/DiagramaOWLViz.png
 
-Diagrama de Classe: https://flaviarps.github.io/visualizacao/projetoFinal/DiagramaClasse.png
+###### Diagrama de Classe: https://flaviarps.github.io/visualizacao/projetoFinal/DiagramaClasse.png
