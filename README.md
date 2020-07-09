@@ -5,19 +5,21 @@
 
 ## Tarefas
 
-##### TAREFA 2 - Histograma: https://flaviarps.github.io/visualizacao/tarefa2ao6/histograma.html
+###### TAREFA 2 - Histograma: https://flaviarps.github.io/visualizacao/tarefa2ao6/histograma.html
 
-##### TAREFA 3 - Barras Empilhadas: https://flaviarps.github.io/visualizacao/tarefa2ao6/tarefa3/barrasEmpilhadas.html
+###### TAREFA 3 - Barras Empilhadas: https://flaviarps.github.io/visualizacao/tarefa2ao6/tarefa3/barrasEmpilhadas.html
 
-##### TAREFA 4 - BoxPlot:
+###### TAREFA 4 - BoxPlot:
 
-##### TAREFA 5 - Dispersão:
+###### TAREFA 5 - Dispersão:
 
-##### TAREFA 6 - Radar:
+###### TAREFA 6 - Radar:
 
-##### TAREFA 7/8 - Tendências multivariadas: https://flaviarps.github.io/visualizacao/tarefa7/trends.html
+###### TAREFA 7/8 - Tendências multivariadas: https://flaviarps.github.io/visualizacao/tarefa7/trends.html
 
-##### TAREFA 9: Cloropleth (mapa)<br>TAREFA 10: Cartograma<br>TAREFA 11: Visualização espaço-temporal<br>TAREFA 12: Visualização de Texto<br>TAREFA 13/14: Tree<br><a href="https://flaviarps.github.io/visualizacao/grafos/" target="_blank">TAREFA 15: Grafos</a>
+###### TAREFA 9: Cloropleth (mapa)<br>TAREFA 10: Cartograma<br>TAREFA 11: Visualização espaço-temporal<br>TAREFA 12: Visualização de Texto<br>TAREFA 13/14: Tree
+
+###### TAREFA 15 - Grafos: https://flaviarps.github.io/visualizacao/tarefa15_grafos/
 
 ## Projeto Final (Ontology:Protégé)
 
