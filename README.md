@@ -4,8 +4,20 @@
 ##### Página criada para disponibilizar as tarefas da aula de Visualização e Processamento do Conhecimento. 
 
 ## Tarefas
-##### Graficos rederizados com a Biblioteca D3.js
-###### TAREFA 2: Histograma<br>TAREFA 3: Barras Empilhadas<br>TAREFA 4: BoxPlot<br>TAREFA 5: Dispersão<br>TAREFA 6: Radar<br><a href="https://flaviarps.github.io/visualizacao/tarefa7/trends.html" target="_blank">TAREFA 7/8: Tendências multivariadas</a><br>TAREFA 9: Cloropleth (mapa)<br>TAREFA 10: Cartograma<br>TAREFA 11: Visualização espaço-temporal<br>TAREFA 12: Visualização de Texto<br>TAREFA 13/14: Tree<br><a href="https://flaviarps.github.io/visualizacao/grafos/" target="_blank">TAREFA 15: Grafos</a>
+
+TAREFA 2 - Histograma: https://flaviarps.github.io/visualizacao/tarefa2ao6/histograma.html
+
+TAREFA 3 - Barras Empilhadas: https://flaviarps.github.io/visualizacao/tarefa2ao6/tarefa3/barrasEmpilhadas.html
+
+TAREFA 4 - BoxPlot:
+
+TAREFA 5 - Dispersão:
+
+TAREFA 6 - Radar:
+
+TAREFA 7/8 - Tendências multivariadas: https://flaviarps.github.io/visualizacao/tarefa7/trends.html
+
+TAREFA 9: Cloropleth (mapa)<br>TAREFA 10: Cartograma<br>TAREFA 11: Visualização espaço-temporal<br>TAREFA 12: Visualização de Texto<br>TAREFA 13/14: Tree<br><a href="https://flaviarps.github.io/visualizacao/grafos/" target="_blank">TAREFA 15: Grafos</a>
 
 ## Projeto Final (Ontology:Protégé)
 
