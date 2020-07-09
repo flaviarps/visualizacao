@@ -1,0 +1,717 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/guaxinim/ontologies/2020/6/untitled-ontology-5"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/guaxinim/ontologies/2020/6/untitled-ontology-5">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Aluno"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Avaliacao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AvaliacaoDiscursiva"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AvaliacaoObjetiva"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disciplina"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Escola"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pessoa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Professor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Segmento"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Turma"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ContemDisciplina"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EstruturadaEm"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#FazAvaliacao"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TemAluno"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TemProfessor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TemTurma"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ano"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cnpj"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ementa"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#endereco"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#matricula"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nome"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nomeDisciplina"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nomeSegmento"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nomeTurma"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nota"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#razaoSocial"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#titulacao"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Aluno_A1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Aluno_A2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Aluno_B1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Aluno_B2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Biologia_Medio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Educacao_Infantil"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ensino_Fundamental"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ensino_Medio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Escola_X"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Matematica_Fund"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Matematica_Medio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Professor_A"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Professor_B"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Prova_Discursiva_A1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Prova_Discursiva_A2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Prova_Objetiva_A1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Prova_Objetiva_A2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Turma_A"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Turma_B"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Aluno"/>
+        <Class IRI="#Pessoa"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aluno"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#FazAvaliacao"/>
+            <Class IRI="#Avaliacao"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Avaliacao"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#TemAluno"/>
+            <Class IRI="#Aluno"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Avaliacao"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#TemTurma"/>
+            <Class IRI="#Turma"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AvaliacaoDiscursiva"/>
+        <Class IRI="#Avaliacao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AvaliacaoObjetiva"/>
+        <Class IRI="#Avaliacao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disciplina"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#TemTurma"/>
+            <Class IRI="#Turma"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Escola"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#EstruturadaEm"/>
+            <Class IRI="#Segmento"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Professor"/>
+        <Class IRI="#Pessoa"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Segmento"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#ContemDisciplina"/>
+            <Class IRI="#Disciplina"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Turma"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#FazAvaliacao"/>
+            <Class IRI="#Avaliacao"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Turma"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#TemAluno"/>
+            <Class IRI="#Aluno"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Turma"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#TemProfessor"/>
+            <Class IRI="#Professor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Aluno"/>
+        <NamedIndividual IRI="#Aluno_A1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Aluno"/>
+        <NamedIndividual IRI="#Aluno_A2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Aluno"/>
+        <NamedIndividual IRI="#Aluno_B1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Aluno"/>
+        <NamedIndividual IRI="#Aluno_B2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Disciplina"/>
+        <NamedIndividual IRI="#Biologia_Medio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Segmento"/>
+        <NamedIndividual IRI="#Educacao_Infantil"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Segmento"/>
+        <NamedIndividual IRI="#Ensino_Fundamental"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Segmento"/>
+        <NamedIndividual IRI="#Ensino_Medio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Escola"/>
+        <NamedIndividual IRI="#Escola_X"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Disciplina"/>
+        <NamedIndividual IRI="#Matematica_Fund"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Disciplina"/>
+        <NamedIndividual IRI="#Matematica_Medio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Professor"/>
+        <NamedIndividual IRI="#Professor_A"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Professor"/>
+        <NamedIndividual IRI="#Professor_B"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AvaliacaoDiscursiva"/>
+        <NamedIndividual IRI="#Prova_Discursiva_A1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AvaliacaoDiscursiva"/>
+        <NamedIndividual IRI="#Prova_Discursiva_A2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AvaliacaoObjetiva"/>
+        <NamedIndividual IRI="#Prova_Objetiva_A1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AvaliacaoObjetiva"/>
+        <NamedIndividual IRI="#Prova_Objetiva_A2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Turma"/>
+        <NamedIndividual IRI="#Turma_A"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Turma"/>
+        <NamedIndividual IRI="#Turma_B"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#TemTurma"/>
+        <NamedIndividual IRI="#Aluno_A1"/>
+        <NamedIndividual IRI="#Turma_A"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#TemTurma"/>
+        <NamedIndividual IRI="#Aluno_A2"/>
+        <NamedIndividual IRI="#Turma_A"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#TemTurma"/>
+        <NamedIndividual IRI="#Aluno_B1"/>
+        <NamedIndividual IRI="#Turma_B"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#TemTurma"/>
+        <NamedIndividual IRI="#Aluno_B2"/>
+        <NamedIndividual IRI="#Turma_B"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#TemTurma"/>
+        <NamedIndividual IRI="#Biologia_Medio"/>
+        <NamedIndividual IRI="#Turma_A"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ContemDisciplina"/>
+        <NamedIndividual IRI="#Ensino_Fundamental"/>
+        <NamedIndividual IRI="#Matematica_Fund"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ContemDisciplina"/>
+        <NamedIndividual IRI="#Ensino_Medio"/>
+        <NamedIndividual IRI="#Matematica_Medio"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ContemDisciplina"/>
+        <NamedIndividual IRI="#Ensino_Medio"/>
+        <NamedIndividual IRI="#Biologia_Medio"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#EstruturadaEm"/>
+        <NamedIndividual IRI="#Escola_X"/>
+        <NamedIndividual IRI="#Educacao_Infantil"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#EstruturadaEm"/>
+        <NamedIndividual IRI="#Escola_X"/>
+        <NamedIndividual IRI="#Ensino_Medio"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#EstruturadaEm"/>
+        <NamedIndividual IRI="#Escola_X"/>
+        <NamedIndividual IRI="#Ensino_Fundamental"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#TemTurma"/>
+        <NamedIndividual IRI="#Matematica_Fund"/>
+        <NamedIndividual IRI="#Turma_B"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#TemTurma"/>
+        <NamedIndividual IRI="#Matematica_Medio"/>
+        <NamedIndividual IRI="#Turma_A"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#TemTurma"/>
+        <NamedIndividual IRI="#Professor_A"/>
+        <NamedIndividual IRI="#Turma_A"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#TemTurma"/>
+        <NamedIndividual IRI="#Professor_B"/>
+        <NamedIndividual IRI="#Turma_B"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#TemAluno"/>
+        <NamedIndividual IRI="#Turma_A"/>
+        <NamedIndividual IRI="#Aluno_A1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#TemAluno"/>
+        <NamedIndividual IRI="#Turma_A"/>
+        <NamedIndividual IRI="#Aluno_A2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#TemProfessor"/>
+        <NamedIndividual IRI="#Turma_A"/>
+        <NamedIndividual IRI="#Professor_A"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#TemAluno"/>
+        <NamedIndividual IRI="#Turma_B"/>
+        <NamedIndividual IRI="#Aluno_B2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#TemAluno"/>
+        <NamedIndividual IRI="#Turma_B"/>
+        <NamedIndividual IRI="#Aluno_B1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#TemProfessor"/>
+        <NamedIndividual IRI="#Turma_B"/>
+        <NamedIndividual IRI="#Professor_B"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#endereco"/>
+        <NamedIndividual IRI="#Aluno_A1"/>
+        <Literal datatypeIRI="&xsd;string">Rua Mackenzie</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#matricula"/>
+        <NamedIndividual IRI="#Aluno_A1"/>
+        <Literal datatypeIRI="&xsd;string">RM1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome"/>
+        <NamedIndividual IRI="#Aluno_A1"/>
+        <Literal datatypeIRI="&xsd;string">Flavia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#endereco"/>
+        <NamedIndividual IRI="#Aluno_A2"/>
+        <Literal datatypeIRI="&xsd;string">Rua Santana</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#matricula"/>
+        <NamedIndividual IRI="#Aluno_A2"/>
+        <Literal datatypeIRI="&xsd;string">RM2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome"/>
+        <NamedIndividual IRI="#Aluno_A2"/>
+        <Literal datatypeIRI="&xsd;string">Erick
+</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#endereco"/>
+        <NamedIndividual IRI="#Aluno_B1"/>
+        <Literal datatypeIRI="&xsd;string">Allana</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#endereco"/>
+        <NamedIndividual IRI="#Aluno_B1"/>
+        <Literal datatypeIRI="&xsd;string">Rua Pirituba</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#matricula"/>
+        <NamedIndividual IRI="#Aluno_B1"/>
+        <Literal datatypeIRI="&xsd;string">RM3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#endereco"/>
+        <NamedIndividual IRI="#Aluno_B2"/>
+        <Literal datatypeIRI="&xsd;string">Rua Piqueri</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#matricula"/>
+        <NamedIndividual IRI="#Aluno_B2"/>
+        <Literal datatypeIRI="&xsd;string">RM4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome"/>
+        <NamedIndividual IRI="#Aluno_B2"/>
+        <Literal datatypeIRI="&xsd;string">Stephanie</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ementa"/>
+        <NamedIndividual IRI="#Biologia_Medio"/>
+        <Literal datatypeIRI="&xsd;string">A diversidade biologia; A organização celular</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nomeDisciplina"/>
+        <NamedIndividual IRI="#Biologia_Medio"/>
+        <Literal datatypeIRI="&xsd;string">Biologia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nomeSegmento"/>
+        <NamedIndividual IRI="#Educacao_Infantil"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Educação Infantil</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nomeSegmento"/>
+        <NamedIndividual IRI="#Ensino_Fundamental"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ensino Fundamental</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nomeSegmento"/>
+        <NamedIndividual IRI="#Ensino_Medio"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ensino Médio</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#razaoSocial"/>
+        <NamedIndividual IRI="#Escola_X"/>
+        <Literal datatypeIRI="&xsd;string">Corujinha Feliz</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ementa"/>
+        <NamedIndividual IRI="#Matematica_Fund"/>
+        <Literal datatypeIRI="&xsd;string">Conjuntos Númericos; Potenciação; Radiciação; Fatoração e racionalização de denominadores; Geometria Plana; Triangulos; Circuferencia; Equação de 2º grau; Equações Exponenciais; Funções; 
+</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nomeDisciplina"/>
+        <NamedIndividual IRI="#Matematica_Fund"/>
+        <Literal datatypeIRI="&xsd;string">Matemática Geral</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ementa"/>
+        <NamedIndividual IRI="#Matematica_Medio"/>
+        <Literal datatypeIRI="&xsd;string">Função Polinominal de 1º Grau; Logaritmos; Matrizes, Polinômios; Equações Algebricas</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nomeDisciplina"/>
+        <NamedIndividual IRI="#Matematica_Medio"/>
+        <Literal datatypeIRI="&xsd;string">Geometria</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#endereco"/>
+        <NamedIndividual IRI="#Professor_A"/>
+        <Literal datatypeIRI="&xsd;string">Rua Higienopolis</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome"/>
+        <NamedIndividual IRI="#Professor_A"/>
+        <Literal datatypeIRI="&xsd;string">Ismar</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#titulacao"/>
+        <NamedIndividual IRI="#Professor_A"/>
+        <Literal datatypeIRI="&xsd;string">Doutor</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#endereco"/>
+        <NamedIndividual IRI="#Professor_B"/>
+        <Literal datatypeIRI="&xsd;string">Rua Itambé</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome"/>
+        <NamedIndividual IRI="#Professor_B"/>
+        <Literal datatypeIRI="&xsd;string">Leandro</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#titulacao"/>
+        <NamedIndividual IRI="#Professor_B"/>
+        <Literal datatypeIRI="&xsd;string">Doutor</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nota"/>
+        <NamedIndividual IRI="#Prova_Discursiva_A1"/>
+        <Literal datatypeIRI="&xsd;float">7.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nota"/>
+        <NamedIndividual IRI="#Prova_Discursiva_A2"/>
+        <Literal datatypeIRI="&xsd;float">9.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nota"/>
+        <NamedIndividual IRI="#Prova_Objetiva_A1"/>
+        <Literal datatypeIRI="&xsd;float">2.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nota"/>
+        <NamedIndividual IRI="#Prova_Objetiva_A2"/>
+        <Literal datatypeIRI="&xsd;float">7.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ano"/>
+        <NamedIndividual IRI="#Turma_A"/>
+        <Literal datatypeIRI="&xsd;int">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nomeTurma"/>
+        <NamedIndividual IRI="#Turma_A"/>
+        <Literal datatypeIRI="&xsd;string">1A_MEDIO</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ano"/>
+        <NamedIndividual IRI="#Turma_B"/>
+        <Literal datatypeIRI="&xsd;int">9
+</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nomeTurma"/>
+        <NamedIndividual IRI="#Turma_B"/>
+        <Literal datatypeIRI="&xsd;string">1B_FUND</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TemAluno"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TemProfessor"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ano"/>
+        <Class IRI="#Turma"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cnpj"/>
+        <Class IRI="#Escola"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ementa"/>
+        <Class IRI="#Disciplina"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#endereco"/>
+        <Class IRI="#Pessoa"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#matricula"/>
+        <Class IRI="#Aluno"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nome"/>
+        <Class IRI="#Pessoa"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nomeDisciplina"/>
+        <Class IRI="#Disciplina"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nomeSegmento"/>
+        <Class IRI="#Segmento"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nomeTurma"/>
+        <Class IRI="#Turma"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nota"/>
+        <Class IRI="#Avaliacao"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#razaoSocial"/>
+        <Class IRI="#Escola"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#titulacao"/>
+        <Class IRI="#Professor"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#ano"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cnpj"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ementa"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#endereco"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#matricula"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nome"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nomeDisciplina"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nomeSegmento"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nomeTurma"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nota"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#razaoSocial"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#titulacao"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

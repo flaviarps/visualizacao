@@ -1,0 +1,28 @@
+{
+  "nodes":[
+		{"name":"Escola", 				"id": "0", 	"group":1},
+		{"name":"Segmento", 			"id": "1",	"group":1},
+		{"name":"Disciplina", 			"id": "2",	"group":1},
+		{"name":"Turma", 				"id": "3",	"group":1},
+		{"name":"Professor", 			"id": "4", 	"group":2},
+		{"name":"Aluno",				"id": "5",	"group":2},
+		{"name":"Pessoa",				"id": "6",	"group":2},
+		{"name":"Avaliacao",			"id": "7",	"group":3},
+		{"name":"AvaliacaoDiscursiva",	"id": "8",	"group":3},
+		{"name":"AvaliacaoObjetiva",	"id": "9",	"group":3}
+		
+	],
+	"links":[
+		{"source":0,"target":1,"weight":1},
+		{"source":1,"target":2,"weight":2},
+		{"source":2,"target":3,"weight":3},
+		{"source":3,"target":4,"weight":4},
+		{"source":3,"target":5,"weight":5},
+		{"source":4,"target":6,"weight":6},
+		{"source":5,"target":6,"weight":7},
+		{"source":7,"target":3,"weight":8},
+		{"source":7,"target":8,"weight":9},
+		{"source":7,"target":9,"weight":10},
+		{"source":7,"target":5,"weight":11}
+	]
+}
