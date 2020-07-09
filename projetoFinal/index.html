@@ -5,17 +5,15 @@
 <title>Owl Protégé</title>
 <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 </head>
-<body>
+<body style="width: 100%; height: 600px">
 
-<h5> Grafo de Força - Ontologia - Protégé <br>
-Flávia Rangel</h5>
+<h5> GRAFO DE FORÇA NO D3.JS - ONTOLOGIA FEITA NO PROTÉGÉ</h5>
 <!-- Referência: http://bl.ocks.org/jhb/5955887 -->
 
 <script type="text/javascript">
 
-    var w = 960;
-    var h = 500;
-    var linkDistance=200;
+    var w = 1000;
+    var h = 600;
 
     var colors = d3.scale.category10();
   
@@ -27,7 +25,7 @@ d3.json("projeto.owl.json", function(dataset) {
         .nodes(dataset.nodes)
         .links(dataset.edges)
         .size([w,h])
-        .linkDistance([linkDistance])
+        .linkDistance([200])
         .charge([-500])
         .theta(0.1)
         .gravity(0.05)
@@ -91,7 +89,7 @@ d3.json("projeto.owl.json", function(dataset) {
                'dy':0,
                'font-size':14,
                'fill': function(d,i){return (d.Property == 'NamedIndividual'? 'violet' : 
-				(d.Property == 'DataPropertyAssetion'? 'lightgreen' : 'blue'))} });
+				(d.Property == 'DataPropertyAssetion'? 'green' : 'blue'))} });
 
     edgelabels.append('textPath')
         .attr('xlink:href',function(d,i) {return '#edgepath'+i})
