@@ -8,7 +8,8 @@
 	
 	<!-- Pesquisa dos dados: https://bulbapedia.bulbagarden.net/wiki/Squirtle_(Pok%C3%A9mon) -->
 
-	<h5> Escolha seu pokemon inicial: </h5>
+	<h5> Escolha seu pokemon inicial: <br>
+		Altura, Peso, Exp</h5>
 	<div id="my_dataviz"></div>
 
 	<script>
@@ -46,7 +47,7 @@
 
 			  // Add Y axis
 			  var y = d3.scaleLinear()
-				.domain([0, 100])
+				.domain([0, 200])
 				.range([ height, 0 ]);
 			  svg.append("g")
 				.call(d3.axisLeft(y));
