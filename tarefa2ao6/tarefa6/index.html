@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+<link rel="stylesheet" href="radar-chart.css">
+<head>
+  <style>
+    body {
+      padding: 20px;
+    }
+    .radar-chart .area {
+      fill-opacity: 0.7;
+    }
+    .radar-chart.focus .area {
+      fill-opacity: 0.3;
+    }
+    .radar-chart.focus .area.focused {
+      fill-opacity: 0.9;
+    }
+    .area.germany, .germany .circle {
+      fill: #FFD700;
+      stroke: none;
+    }
+    .area.argentina, .argentina .circle {
+      fill: #ADD8E6;
+      stroke: none;
+    }
+  </style>
+
+  <script type="text/javascript" src="http://d3js.org/d3.v3.js"></script>
+  <script type="text/javascript" src="radar-chart.js"></script>
+
+
+  </head>
+  <body>
+  <!-- Referencia: https://www.d3-graph-gallery.com/ -->
+	
+	<!-- Pesquisa dos dados: https://bulbapedia.bulbagarden.net/wiki/Squirtle_(Pok%C3%A9mon) -->
+
+	<h5> Escolha seu pokemon inicial: <br>
+		HP, Altura, Peso, Experiencia, Ataque e Defesa</h5>
+
+ <div id="chart-container"></div>
+</p>
+<script type="text/javascript">
+
+    var data = [];
+    var chart = RadarChart.chart();
+  
+	  var c = "nome,HP,altura, peso,experiencia,ataque,defesa\nBulbasaur,45,70,6.9,64,42,45\nCharmander,40,40,60,8.5,52,65\nSquirtle,38,50,9,66,45,65",
+		  w = 600
+		  h = 600,
+	  csv = c.split("\n").map(function(i){return i.split(",")})
+	  headers = []
+	  csv.forEach(function(item, i){
+		if(i==0){
+		  headers = item;
+		}else{
+		  newSeries = {};
+		  item.forEach( function(v, j){
+			if(j==0){
+			  newSeries.className = v;
+			  newSeries.axes = [];
+			}else{
+			  newSeries.axes.push({"axis":[headers[j]], "value": parseFloat(v)});
+			}
+		  });
+		  data.push(newSeries);
+		}
+	  })
+  
+	RadarChart.defaultConfig.radius = 3;
+	RadarChart.defaultConfig.w = w;
+	RadarChart.defaultConfig.h = h;
+	RadarChart.draw("#chart-container", data);
+
+	function animate(elem,time) {
+		if( !elem) return;
+		var to = elem.offsetTop;
+		var from = window.scrollY;
+		var start = new Date().getTime(),
+			timer = setInterval(function() {
+				var step = Math.min(1,(new Date().getTime()-start)/time);
+				window.scrollTo(0,(from+step*(to-from))+1);
+				if( step == 1){ clearInterval(timer);};
+			},25);
+			window.scrollTo(0,(from+1));
+		}
+
+	var divVal = document.getElementById('chart-container');
+	animate(divVal,600);
+
+</script>
+
+</body>
+</html>
