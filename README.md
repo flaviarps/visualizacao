@@ -13,11 +13,9 @@
 
 ###### TAREFA 5 - Dispersão:
 
-###### TAREFA 6 - Radar:
+###### TAREFA 6 - Radar:https://flaviarps.github.io/visualizacao/tarefa2ao6/tarefa6/
 
 ###### TAREFA 7/8 - Tendências multivariadas: https://flaviarps.github.io/visualizacao/tarefa7/trends.html
-
-###### TAREFA 9: Cloropleth (mapa)<br>TAREFA 10: Cartograma<br>TAREFA 11: Visualização espaço-temporal<br>TAREFA 12: Visualização de Texto<br>TAREFA 13/14: Tree
 
 ###### TAREFA 15 - Grafos: https://flaviarps.github.io/visualizacao/tarefa15_grafos/
 
