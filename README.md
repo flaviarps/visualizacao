@@ -9,10 +9,6 @@
 
 ###### TAREFA 3 - Barras Empilhadas: https://flaviarps.github.io/visualizacao/tarefa2ao6/tarefa3/barrasEmpilhadas.html
 
-###### TAREFA 4 - BoxPlot:
-
-###### TAREFA 5 - Dispersão:
-
 ###### TAREFA 6 - Radar:https://flaviarps.github.io/visualizacao/tarefa2ao6/tarefa6/
 
 ###### TAREFA 7/8 - Tendências multivariadas: https://flaviarps.github.io/visualizacao/tarefa7/trends.html
